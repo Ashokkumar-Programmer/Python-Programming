@@ -1,0 +1,8 @@
+n1=int(input())
+inp1=set(map(int,input().split()))
+n2=int(input())
+inp2=set(map(int,input().split()))
+a=inp1.symmetric_difference(inp2)
+b=inp2.symmetric_difference(inp1)
+output=a.union(b)
+print(len(output))
